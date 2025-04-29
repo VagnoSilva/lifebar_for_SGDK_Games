@@ -20,13 +20,16 @@ int main(bool hardReset) {
 
     loadLifeBarTiles(); // carrega os tiles da barra de vida
 
-    // Aqui voc� pode desenhar a barra conforme o jogo roda, neste exemplo estou apenas pre carregando a barra na memoria
+    // Aqui você pode desenhar a barra conforme o jogo roda, neste exemplo estou apenas pre carregando a barra na memoria
+    /*Explicação*/
+    //drawLifeBar(Plan, posX, PosY, Life_Atual, Life_Total, IsBoss, IsEnemy); obs: o numero que está na posição x e y é o numero de tiles que será pulado antes de desenhar a barra
+    
     drawLifeBar(WINDOW, 3, 2, 30, 60, 13, FALSE, FALSE);  // player 50%
     drawLifeBar(WINDOW, 3, 4, 9, 30, 3,  FALSE, TRUE);   // inimigo 30%
     drawLifeBar(WINDOW, 3, 6, 100, 100, 13, TRUE, TRUE);   // boss cheio
 
     //comando para apagar a barra
-    //hideLifeBar(WINDOW, 3, 4, 10); //(plano onde esta a barra, posi��o X, posi��o Y, tamanho da barra em tiles)
+    //hideLifeBar(WINDOW, 3, 4, 10); //(plano onde esta a barra, posição X, posição Y, tamanho da barra em tiles)
 
     while (1) {
 
